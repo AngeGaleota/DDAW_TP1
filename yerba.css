@@ -1,0 +1,26 @@
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 140px auto 1fr;
+    grid-template-areas: "A A" "B C" "D D";
+    gap: 10px;
+}
+.header{
+    display: flex;
+    grid-area: A;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.indice{
+    grid-area: B;
+}
+
+.contenido{
+    grid-area: C;
+}
+
+.referencias{
+    grid-area: D;
+}
