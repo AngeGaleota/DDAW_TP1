@@ -1,11 +1,23 @@
 .contenedor{
     display: grid;
+    background-color: white;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 140px auto 1fr;
     grid-template-areas: "A A" "B C" "D D";
     gap: 10px;
+    font: sans-serif;
+}
+
+.titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 .header{
+    background-color: rgb(196, 196, 196);
+    border: 1px solid black;
+    color:rgb(70, 70, 70);
     display: flex;
     grid-area: A;
     flex-direction: row;
@@ -14,13 +26,31 @@
 }
 
 .indice{
+    background-color: rgb(196, 196, 196);
+    border: 1px solid black;
     grid-area: B;
 }
 
 .contenido{
+    border: 1px solid black;
+    background-color:white;
+    padding: 30px;
     grid-area: C;
 }
 
 .referencias{
+    background-color: rgb(196, 196, 196);
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
     grid-area: D;
+}
+a, h3{
+    font-size: 20px;
+}
+h4{
+    font-size:15px;
 }
