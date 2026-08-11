@@ -1,12 +1,14 @@
 .contenedor{
     display: grid;
-    background-color: white;
+    background-color: rgba(85, 60, 50, 0.727);
+    color:rgb(57, 57, 57);
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 140px auto 1fr;
     grid-template-areas: "A A" "B C" "D D";
     gap: 10px;
     font: sans-serif;
 }
+
 .titulo{
     display: flex;
     flex-direction: row;
@@ -14,7 +16,7 @@
     align-items: center;
 }
 .header{
-    background-color: rgb(196, 196, 196);
+    background-color: rgba(212, 201, 193, 0.662);
     border: 1px solid black;
     color:rgb(70, 70, 70);
     display: flex;
@@ -25,7 +27,7 @@
 }
 
 .indice{
-    background-color: rgb(196, 196, 196);
+    background-color: rgba(212, 201, 193, 0.662);
     border: 1px solid black;
     grid-area: B;
 }
@@ -38,16 +40,24 @@
 }
 
 .referencias{
-    background-color: rgb(196, 196, 196);
+    background-color: rgba(212, 201, 193, 0.662);
     border: 1px solid black;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    
+   justify-content: space-around;
     padding: 20px;
     grid-area: D;
 }
 a, h3{
     font-size: 20px;
+}
+a{
+     color: rgb(85, 44, 29);
+}
+h2 {
+  border-bottom: 1px solid #a5a5a5;
+  padding-bottom: 5px;
 }
 h4{
     font-size:15px;
