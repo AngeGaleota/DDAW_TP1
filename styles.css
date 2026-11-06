@@ -23,6 +23,7 @@ body {
 .header{
     background-color: rgba(212, 201, 193, 0.662);
     border: 1px solid black;
+    color:rgb(70, 70, 70);
     display: flex;
     grid-area: A;
     flex-direction: row;
