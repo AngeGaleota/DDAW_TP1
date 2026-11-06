@@ -1,17 +1,43 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Mate</title>
+        <title>Wikiange</title>
         <link rel="icon" type="image/x-icon" href="img/wikiange.png">
+        <link rel="stylesheet" href="styles.css">
+        <script src="main.js" defer></script>
+        <meta charset="utf-8" />
     </head>
     <body>
-        <header>
-            <img src="img/logopag.png" alt="wikiange" style="width: 320px; height: auto;">
+        <div class="contenedor">
+
+            <header class="header">
+            <img id="logoPag" src="img/logopag.png" alt="wikiange" style="width: 300px; height: auto; ">
+            <img id="wikiange" src="img/wikiange.png" alt="wikiange" style="width: 150px; height: auto; ">
         </header>
         
-        <h1>Mate</h1>
-        <img src="img/Mate.jpg" alt="Mate" >
-        <p>
+        
+    
+        <aside class="indice">
+        <ul id="lista">
+        </ul>
+        <div class="botones">
+    <button id="Modo">Modo Oscuro</button>
+    <div class="botones-letra">
+        <button class="pequena">A</button>
+        <button class="estandar">A</button>
+        <button class="grande">A</button>
+    </div>
+</div>
+        </aside>
+        
+        <main class="contenido">
+            <section id="inicio">
+            <div class="titulo">
+            <h1>Mate</h1>
+            <img src="img/Mate.jpg" alt="Mate" style="height: 150px; background-color: rgb(102, 78, 68);
+              padding: 3px;" >
+        </div>
+            <p>
             El mate (en guaraní: ka'ay) es una infusión a base de hojas de yerba mate (Ilex paraguariensis), planta originaria de las cuencas de los ríos Paraguay y Paraná, en Sudamérica. La yerba mate está formada por hojas que son secadas, cortadas y molidas, que tienen sabor amargo debido a los taninos que contienen. Comúnmente se toma amargo, aunque también puede endulzarse con azúcar, estevia u otros endulzantes no calóricos. Al agregar agua a la infusión se genera espuma debido a los glucósidos que la yerba mate contiene.<br><br>
             Es consumido en América desde la época prehispánica por algunas etnias de origen tupí-guaraní, como los avá, los mbyá y los kaiowa, y también, en menor medida, por otras etnias que realizaban comercio con ellos, como los ñandevá, los taluhets (pampas antiguos) y los qom (tobas).Asimismo, fue adoptado rápidamente por los colonizadores españoles y quedó como parte del acervo cultural principalmente en Paraguay, <a href="argentina.html">Argentina</a>, Uruguay, Chile, Bolivia, y Sur de Brasil.
              A su vez, es consumido en Siria gracias a migrantes sirios en Argentina que llevaron el producto a su país natal y el Líbano.<br><br>
@@ -19,21 +45,12 @@
              Además, se le suma un efecto diurético, que es compensado por el alto consumo de agua que se realiza cuando se «matea», resultando así una infusión digestiva, depuradora y ―al poseer antioxidantes― preservadora del organismo.
              Como las otras infusiones mencionadas, el mate tiene cierta acidez, razón por la que muchas veces se le añaden ―en escasas proporciones― otras hierbas (digestivas, reguladoras de la función hepática, sedantes, etc.) que logran neutralizar la acidez como también compensar el ligero efecto estimulante de la cafeína.<br><br>
              El país con el mayor consumo total de mate en el mundo es Brasil, aunque solo el 20 % de su población lo consume. En cambio, Paraguay, Argentina y Uruguay destacan por tener un mayor porcentaje de consumidores de mate en relación con su población total.</p>
-        
-        <nav>
-        <ul>
-            <li><a href="#historia">Historia</a></li>
-            <li><a href="#preparacion">Preparación</a></li>
-            <li><a href="#lenguaje">Lenguaje del mate</a></li>
-            <li><a href="#variantes">Variantes de la infusión</a></li>
-            <li><a href="#referencias">Referencias</a></li>
-        </ul>
-        </nav>
-        
+        </section>
 
 
-        <div>
+        <section class="seccion">
             <h2 id="historia">Historia</h2>
+            <div class="contenido-seccion">
         <p>
             Los antiguos pueblos guaraníes fueron los pioneros en consumir de diversas formas las hojas de yerba mate, bebiéndola con agua e incluso mascándolas. Los conquistadores españoles hicieron los primeros registros escritos de su consumo en el actual Paraguay en el siglo XVI.
              Los mismos jesuitas elogiaron los efectos de la yerba, ya que daba un cierto vigor al que ingería la infusión, y calmaba la sed mejor que el agua pura. El padre Pedro de Montenegro (1663-1728), naturalista, declaró:<br><br>
@@ -57,11 +74,13 @@
                Después de esto el mate se extendió hacia Chile. Los británicos de Chile (que se ocupaban de la trata de esclavos traídos de África) vieron que también beneficiaba a los negros, lo probaron y lo llevaron a Londres, donde fue muy bien recibido.
              Incluso se pensó en reemplazar el tradicional uso del té por esta bebida, ya que era más provechosa e incluso más barata; pero como las misiones jesuíticas del Paraguay eran su único productor, y el comercio del té les reportaba tan buenas ganancias, se desechó la idea.
             </p>
-        </div>
+            </div>
+        </section>
         
         
-        <div>
+        <section class="seccion">
             <h2 id="preparacion">Preparación</h2>
+            <div class="contenido-seccion">
         <p>
             Para preparar un mate cebado:</p>
 
@@ -117,10 +136,12 @@
             <li>El agua no debe ser mucha, apenas moja la yerba, nunca se llena el mate de agua ni flotan los palillos.</li>
         </ol>
         </div>
+        </section>
 
         
-        <div>
+        <section class="seccion">
             <h2 id="lenguaje">Lenguaje del mate</h2>
+            <div class="contenido-seccion">
         <p>
             El lenguaje del mate es un sistema de señales tácitas que se hacen tradicionalmente cuando se bebe mate en el Cono Sur.<br>
             Debe evitar confundírsele con el vocabulario referido al mate.<br><br></p>
@@ -159,10 +180,12 @@
             Se llama «mate largo», «alargar el mate» o «dormir el mate» cuando alguien retiene por un tiempo relativamente prolongado el mate antes de entregarlo a la persona que está cebando.
         </p>
         </div>
+        </section>
 
         
-        <div>
+        <section class="seccion">
             <h2 id="variantes">Variantes de la infusión</h2>
+            <div class="contenido-seccion">
         <h3>Mate amargo</h3>
         <p>En algunas partes del Cono Sur se prefiere beber mate amargo, especialmente en Paraguay, Uruguay, sur de Brasil, Argentina y Bolivia (departamento de Tarija y el Gran Chaco). Es la forma más habitual de tomar mate. También se lo conoce como cimarrón (chimarrão, en Brasil).</p>
         <h3>Mate dulce</h3>
@@ -183,17 +206,38 @@
             La yerba mate es puesta en maceración en agua fría y proporciona una bebida agradable por su efecto refrescante, especialmente en jornadas con altas temperaturas, evitando así los inconvenientes del mate hervido (cocido). Esta modalidad es también utilizada en la región pampeana de Argentina.</p>
         <h3>Mate cocido</h3>
         <p>El mate cocido (chá mate, en portugués) es una infusión. La yerba mate se hierve en agua, se cuela y se sirve en una taza. Es una bebida que reemplaza al café en el desayuno o la merienda. Se consume en Bolivia, Argentina, Brasil, Paraguay y Uruguay. Varias empresas ofrecen yerba mate envasada en saquitos, similares a los de té, o aún mate cocido en forma soluble. En Paraguay se consume culturalmente el mate o el tereré con plantas medicinales como uñas de gato, raíz dientes de León, etc.</p>
-
         </div>
+    </section>
 
-        <div>
-            <h2 id="referencias">Referencias</h2>
-        <ul>
-            <li><a href="argentina.html" >Argentina</a></li>
-            <li><a href="yerba.html">Yerba</a></li>
-            <li><a href="https://es.wikipedia.org/wiki/Mate_(infusi%C3%B3n)">Mate-Wikipedia</a></li>
-        </ul>
+    <section class="seccion">
+          <h2>Discusión</h2>
+          <div class="contenido-seccion">
+            <form id="formulario">
+
+            <label for="mensaje">Escribe tu nombre:</label>
+            <input type="text"  id="nombre" placeholder="Nombre"/>
+
+            <label for="mensaje">Escribe tu comentario:</label>
+            <textarea id="comentario" name="mensaje"></textarea>
+            <p id="contador-caracteres">0 / 200</p>
+          
+          <button type="submit" id="envio-comentario">Enviar</button>
+          <p id="avisos"></p>
+          <ul id="lista-comentarios"></ul>
+          </form>
+          </div>
+        </section>
+        </main>
+
+    
+
+        <footer class="referencias">
+        <a href="argentina.html" >Argentina</a>
+        <a href="yerba.html">Yerba</a>
+        <a href="https://es.wikipedia.org/wiki/Mate_(infusi%C3%B3n)">Mate-Wikipedia</a>
+        </footer>
         </div>
+        
         
         
     </body>
