@@ -4,16 +4,20 @@
     <title>Wikiange</title>
     <link rel="icon" type="image/x-icon" href="img/wikiange.png" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="main.js" defer></script>
+    <meta charset="utf-8" />
   </head>
   <body>
     <div class="contenedor">
       <header class="header">
         <img
+          id="logoPag"
           src="img/logopag.png"
           alt="wikiange"
           style="width: 300px; height: auto"
         />
         <img
+        id="wikiange"
           src="img/wikiange.png"
           alt="wikiange"
           style="width: 150px; height: auto"
@@ -21,227 +25,236 @@
       </header>
 
       <aside class="indice">
-        <ul>
-          <li><a href="#organizacion">Organización territorial</a></li>
-          <li><a href="#gobierno">Gobierno y política</a></li>
-          <li><a href="#flora">Flora y fauna</a></li>
-          <li><a href="#cultura">Cultura</a></li>
-          <li><a href="#referencias">Referencias</a></li>
+        <ul id="lista">
         </ul>
+        <div class="botones">
+    <button id="Modo">Modo Oscuro</button>
+    <div class="botones-letra">
+        <button class="pequena">A</button>
+        <button class="estandar">A</button>
+        <button class="grande">A</button>
+    </div>
+</div>
       </aside>
 
       <main class="contenido">
-        <div class="titulo">
-          <h1>Argentina</h1>
-          <img
-            src="img/argentina.jpg"
-            alt="Bandera de Argentina"
-            style="
-              width: 135px;
-              height: 80px;
-              background-color: rgb(102, 78, 68);
-              padding: 3px;
-            "
-          />
-        </div>
-
-        <div>
-          <p>
-            Argentina, oficialmente República Argentina, es un país soberano
-            ubicado en el extremo sur y sudeste de América del Sur. Adopta la
-            forma de gobierno democrática, federal, representativa y
-            republicana. Se constituye como un país federal descentralizado,
-            compuesto por veintitrés provincias más la Ciudad Autónoma de Buenos
-            Aires, designada como capital federal.
-            <br /><br />
-            La Constitución de la Nación Argentina rige los principios de
-            adhesión entre 23 estados asociados, denominadas provincias, bajo
-            una sola representación con Capital Federal en la Ciudad Autónoma de
-            Buenos Aires. Dichas jurisdicciones gozan atributos plenos en los
-            poderes ejecutivo, legislativo y judicial. Poseen ley suprema,
-            bandera y fuerzas policiales propias, así como el dominio de
-            recursos naturales circunscriptos. Las facultades en defensa,
-            moneda, derechos y garantías, se delegan al gobierno nacional. Las
-            extensas disputas tras la emancipación española en 1816 hasta
-            consolidar la República como tal en 1880, exigió a las provincias
-            renunciar a la declaración soberana como partes asociadas, en tanto
-            se reconocen preexistentes a la formación del Estado argentino.
-            <br /><br />
-            Argentina es un país bicontinental, cuyo vasto territorio es el
-            octavo más extenso del planeta, abarcando gran parte del Cono Sur y
-            extendiéndose hasta la Antártida. En la plataforma americana limita
-            al norte con Bolivia y Paraguay, al nordeste con Brasil, al este con
-            Uruguay y el océano Atlántico, al sur con Chile y el pasaje de
-            Drake, y al oeste con Chile.
-            <br /><br />
-            Es el segundo país con el mayor índice de desarrollo humano (IDH) de
-            la región, detrás de su vecino Chile. Garantiza modelos de salud y
-            educación pública con acceso gratuito, universal y de calidad. Posee
-            una tasa de alfabetismo en personas mayores de quince años superior
-            al 99 %, y cuenta con una cobertura médica hospitalaria regularmente
-            distribuida por cantidad poblacional.
-            <br /><br />
-            La República Argentina es una de las naciones más desarrolladas e
-            influyentes del continente. Hasta mediados del siglo XX, fue una de
-            las economías más prósperas del mundo. Sin embargo, los complejos
-            acontecimientos sociales, políticos y económicos que le sucedieron
-            afectaron sus variables de crecimiento, causando una inestabilidad
-            financiera con abruptas reconfiguraciones de modelos políticos y
-            económicos, mostrándose incapaces de revertir los agravantes hasta
-            la actualidad. No obstante, es la segunda economía más importante de
-            Sudamérica —detrás de Brasil—, la 24.º más grande del mundo por PIB
-            nominal y una potencia regional capaz de adaptarse, innovar y
-            estabilizarse con prontitud tras largos períodos de crisis.[
-            <br /><br />
-            Con un desarrollo científico y tecnológico referente, es el país
-            latinoamericano más laureado con premios Nobel, con cinco en total,
-            —tres de ellos en ciencias— y el que más unicornios tecnológicos
-            posee. Está a la vanguardia en materia nuclear y espacial, e integra
-            el selecto grupo de países que dominan el ciclo completo de uranio.
-            Esto le ha permitido diseñar, construir y exportar satélites,
-            radares, reactores nucleares, equipamiento médico nuclear, aviones
-            de combate, helicópteros, etc. Destaca en la fabricación de
-            automóviles, software, biotecnología, medicamentos, industria naval,
-            siderúrgica y textil, etc. Con una capacidad para alimentar a 400
-            millones de personas, es uno de los principales exportadores de
-            alimentos, materias primas, tecnología, ingeniería y maquinaria
-            agropecuaria a nivel global, que le ha valido el apodo de granero
-            del mundo.
-            <br /><br />
-            Su territorio bicontinental abarca una superficie de 2 780 400 km²,
-            es el país hispanohablante más extenso del planeta, el segundo más
-            grande de América Latina y octavo en el mundo, si se considera solo
-            la superficie continental sujeta a soberanía efectiva. Su plataforma
-            continental, reconocida por la ONU en 2014, alcanza los 6 581 500
-            km², convirtiéndose en una de las más grandes del mundo,[26]
-            extendiéndose desde el continente americano hasta el Polo Sur en la
-            Antártida, a través del Atlántico Sur. Si se cuentan las islas
-            Malvinas, Georgias del Sur, Sandwich del Sur y otras numerosas islas
-            menores (administradas por el Reino Unido, pero de soberanía en
-            litigio), más una porción del área antártica llamada Antártida
-            Argentina al sur del paralelo 60° S, sobre la cual Argentina reclama
-            soberanía, la superficie se eleva a 3 761 274 km². Es una de las
-            veinte naciones con presencia continua en la Antártida y posee la
-            mayor cantidad de bases permanentes, con seis en total.
-            <br /><br />
-            Su territorio reúne una gran diversidad de climas, causada por una
-            amplitud latitudinal que supera los 30° —incluyendo varias zonas
-            geoastronómicas—, una diferencia en la altitud que va de 107 m bajo
-            el nivel del mar (Laguna del Carbón) a casi 7000 m s. n. m. y la
-            extensión del litoral marítimo que alcanza 4725 km. Amplias llanuras
-            húmedas limitan con extensos desiertos y altas montañas, mientras
-            que la presencia de climas tropicales y subtropicales en el norte,
-            contrastan con las nevadas y fríos extremos en las zonas
-            cordilleranas y el sur.
-            <br /><br />
-            La población argentina es un crisol de culturas y etnias, resultado
-            de la confluencia de diversos grupos a lo largo de la historia. Los
-            pueblos originarios, fueron los primeros habitantes del
-            territorio.[30] Con la llegada de los españoles[31] en el siglo XVI,
-            se produjo un mestizaje que dio forma a la base de la identidad
-            argentina. Sin embargo, fue durante el siglo XX cuando la Argentina
-            experimentó una gran oleada de inmigración,[32] a consecuencia de
-            ser un país próspero. Llegaron españoles e italianos, también
-            inmigrantes europeos como alemanes, franceses y eslavos. Se estima
-            que entre 1857 y 1947 llegaron 2 967 759 inmigrantes italianos.[33]
-            Esta diversidad se refleja en la rica cultura argentina, que combina
-            tradiciones indígenas, españolas y europeas, y se manifiesta en su
-            música, arte, literatura y gastronomía. La influencia de estas
-            corrientes migratorias ha dado lugar a una sociedad cosmopolita y
-            multicultural, donde la identidad argentina se define por su
-            complejidad y diversidad.
-          </p>
-
-          <div>
-            <h2 id="organizacion">Organización territorial</h2>
-            <h3>Provincias</h3>
-            <p>
-              El territorio de la República Argentina está dividido en 24
-              jurisdicciones: 23 provincias y un distrito federal (Ciudad
-              Autónoma de Buenos Aires).[194] Se denomina provincia a cada uno
-              de los veintitrés estados federados reconocidos por la
-              Constitución de la Nación Argentina, que junto con la Ciudad
-              Autónoma de Buenos Aires constituyen las jurisdicciones de primer
-              orden del país.[
-              <br /><br />
-              Las provincias poseen plena autonomía política, administrativa e
-              institucional, de acuerdo con lo establecido en los artículos 121
-              a 129 de la Constitución Nacional. Son entidades preexistentes a
-              la organización nacional, y delegaron parte de sus atribuciones
-              soberanas para constituir la federación argentina en 1853.[
-              <br /><br />
-              El país mantiene, por mandato constitucional, los nombres
-              históricos de Provincias Unidas del Río de la Plata y
-              Confederación Argentina, además de la denominación de uso
-              corriente República Argentina.[
-            </p>
-            <h3>Ciudad Autónoma de Buenos Aires</h3>
-            <p>
-              Buenos Aires es la capital y ciudad más poblada de la República
-              Argentina. Sus nombres oficiales son Ciudad de Buenos Aires o
-              Ciudad Autónoma de Buenos Aires (CABA).[198] También es llamada
-              Capital Federal, sede del Gobierno nacional.[199] Es uno de los 24
-              distritos, o «jurisdicciones de primer orden»,[200] que conforman
-              el país. Desde 1996 es una ciudad autónoma, por lo que tiene sus
-              propios poderes ejecutivo, legislativo y judicial. Está situada en
-              la región centro-este del país, sobre la orilla sur del Río de la
-              Plata, en la región pampeana. En 1880, la ciudad de Buenos Aires
-              fue cedida por la provincia de Buenos Aires para que fuera la
-              capital federal del país; aunque en 2020 se declararon 24
-              «capitales alternas» (una en cada provincia con la sola excepción
-              de la provincia de Buenos Aires donde se declararon dos) en
-              ciudades propuestas por las 23 provincias de la República (ley
-              27.589).[201] En virtud de la reforma constitucional de 1994, goza
-              de un régimen de autonomía.
-              <br /><br />
-              Su tejido urbano se asemeja a un abanico que limita al sur, oeste
-              y norte con la lindante provincia de Buenos Aires y al este con el
-              Río de la Plata. Oficialmente la ciudad se encuentra dividida en
-              15 comunas que agrupan a 48 barrios.[
-              <br /><br />
-              La población de la ciudad, según el Censo de 2022, es de 3 120 612
-              habitantes.[203] Integra un aglomerado urbano mayor denominado
-              área metropolitana de Buenos Aires (AMBA) junto a cuarenta
-              partidos-municipios de la lindera provincia de Buenos Aires, que
-              en total suma una población de 13 395 796 habitantes.
-              <br /><br />
-              Buenos Aires es una ciudad cosmopolita y un importante destino
-              turístico.[204][205] Su compleja infraestructura la convierte en
-              una de las metrópolis de mayor importancia de América y es una
-              ciudad global de categoría «alfa -»,[206] dadas sus influencias en
-              el comercio, finanzas, moda, arte, gastronomía, educación,
-              entretenimiento y principalmente en su marcada cultura.[207] Su
-              renta per cápita es de las más altas de la región.[208][209] En
-              2022, fue la ciudad más visitada de Latinoamérica.[210][211] Es
-              considerada una de las veinticinco ciudades más influyentes del
-              mundo.
-              <br /><br />
-              Su perfil urbano es marcadamente ecléctico en el casco histórico.
-              Se mezclan los estilos virreinal español, art decó, art nouveau,
-              neogótico, italianizante, francés borbónico y academicismo
-              francés. Por esto último, sumado a su desarrollo edilicio y
-              marcada influencia europea en su arquitectura en determinadas
-              zonas, es que se la conoce en el mundo por el apodo de «La París
-              de América».
-            </p>
-            <h3>Regiones para el desarrollo económico y social</h3>
-            <p>
-              Las regiones para el desarrollo económico y social o simplemente
-              regiones, son entidades de coordinación formalmente constituidas
-              en Argentina por tratados interprovinciales,[214] que agrupan a un
-              número de provincias que acceden voluntariamente. Entre sus
-              principales objetivos está la mejora en la ejecución de políticas
-              públicas, de la administración de los recursos económicos, y el
-              favorecimiento del desarrollo económico y social de las provincias
-              que las integran. La conformación de una región puede responder a
-              aspectos históricos, geográficos, económicos, sociales, culturales
-              y políticos, no existiendo ningún criterio establecido para su
-              conformación.
-            </p>
-            <img src="img/mapa_agrnentina.png" alt="Mapa Argentina" />
+        <section id="inicio">
+          <div class="titulo">
+            <h1>Argentina</h1>
+            <img
+              src="img/argentina.jpg"
+              alt="Bandera de Argentina"
+              style="
+                width: 135px;
+                height: 80px;
+                background-color: rgb(102, 78, 68);
+                padding: 3px;
+              "
+            />
           </div>
+          <div>
+            <p>
+              Argentina, oficialmente República Argentina, es un país soberano
+              ubicado en el extremo sur y sudeste de América del Sur. Adopta la
+              forma de gobierno democrática, federal, representativa y
+              republicana. Se constituye como un país federal descentralizado,
+              compuesto por veintitrés provincias más la Ciudad Autónoma de
+              Buenos Aires, designada como capital federal.
+              <br /><br />
+              La Constitución de la Nación Argentina rige los principios de
+              adhesión entre 23 estados asociados, denominadas provincias, bajo
+              una sola representación con Capital Federal en la Ciudad Autónoma
+              de Buenos Aires. Dichas jurisdicciones gozan atributos plenos en
+              los poderes ejecutivo, legislativo y judicial. Poseen ley suprema,
+              bandera y fuerzas policiales propias, así como el dominio de
+              recursos naturales circunscriptos. Las facultades en defensa,
+              moneda, derechos y garantías, se delegan al gobierno nacional. Las
+              extensas disputas tras la emancipación española en 1816 hasta
+              consolidar la República como tal en 1880, exigió a las provincias
+              renunciar a la declaración soberana como partes asociadas, en
+              tanto se reconocen preexistentes a la formación del Estado
+              argentino.
+              <br /><br />
+              Argentina es un país bicontinental, cuyo vasto territorio es el
+              octavo más extenso del planeta, abarcando gran parte del Cono Sur
+              y extendiéndose hasta la Antártida. En la plataforma americana
+              limita al norte con Bolivia y Paraguay, al nordeste con Brasil, al
+              este con Uruguay y el océano Atlántico, al sur con Chile y el
+              pasaje de Drake, y al oeste con Chile.
+              <br /><br />
+              Es el segundo país con el mayor índice de desarrollo humano (IDH)
+              de la región, detrás de su vecino Chile. Garantiza modelos de
+              salud y educación pública con acceso gratuito, universal y de
+              calidad. Posee una tasa de alfabetismo en personas mayores de
+              quince años superior al 99 %, y cuenta con una cobertura médica
+              hospitalaria regularmente distribuida por cantidad poblacional.
+              <br /><br />
+              La República Argentina es una de las naciones más desarrolladas e
+              influyentes del continente. Hasta mediados del siglo XX, fue una
+              de las economías más prósperas del mundo. Sin embargo, los
+              complejos acontecimientos sociales, políticos y económicos que le
+              sucedieron afectaron sus variables de crecimiento, causando una
+              inestabilidad financiera con abruptas reconfiguraciones de modelos
+              políticos y económicos, mostrándose incapaces de revertir los
+              agravantes hasta la actualidad. No obstante, es la segunda
+              economía más importante de Sudamérica —detrás de Brasil—, la 24.º
+              más grande del mundo por PIB nominal y una potencia regional capaz
+              de adaptarse, innovar y estabilizarse con prontitud tras largos
+              períodos de crisis.[
+              <br /><br />
+              Con un desarrollo científico y tecnológico referente, es el país
+              latinoamericano más laureado con premios Nobel, con cinco en
+              total, —tres de ellos en ciencias— y el que más unicornios
+              tecnológicos posee. Está a la vanguardia en materia nuclear y
+              espacial, e integra el selecto grupo de países que dominan el
+              ciclo completo de uranio. Esto le ha permitido diseñar, construir
+              y exportar satélites, radares, reactores nucleares, equipamiento
+              médico nuclear, aviones de combate, helicópteros, etc. Destaca en
+              la fabricación de automóviles, software, biotecnología,
+              medicamentos, industria naval, siderúrgica y textil, etc. Con una
+              capacidad para alimentar a 400 millones de personas, es uno de los
+              principales exportadores de alimentos, materias primas,
+              tecnología, ingeniería y maquinaria agropecuaria a nivel global,
+              que le ha valido el apodo de granero del mundo.
+              <br /><br />
+              Su territorio bicontinental abarca una superficie de 2 780 400
+              km², es el país hispanohablante más extenso del planeta, el
+              segundo más grande de América Latina y octavo en el mundo, si se
+              considera solo la superficie continental sujeta a soberanía
+              efectiva. Su plataforma continental, reconocida por la ONU en
+              2014, alcanza los 6 581 500 km², convirtiéndose en una de las más
+              grandes del mundo,[26] extendiéndose desde el continente americano
+              hasta el Polo Sur en la Antártida, a través del Atlántico Sur. Si
+              se cuentan las islas Malvinas, Georgias del Sur, Sandwich del Sur
+              y otras numerosas islas menores (administradas por el Reino Unido,
+              pero de soberanía en litigio), más una porción del área antártica
+              llamada Antártida Argentina al sur del paralelo 60° S, sobre la
+              cual Argentina reclama soberanía, la superficie se eleva a 3 761
+              274 km². Es una de las veinte naciones con presencia continua en
+              la Antártida y posee la mayor cantidad de bases permanentes, con
+              seis en total.
+              <br /><br />
+              Su territorio reúne una gran diversidad de climas, causada por una
+              amplitud latitudinal que supera los 30° —incluyendo varias zonas
+              geoastronómicas—, una diferencia en la altitud que va de 107 m
+              bajo el nivel del mar (Laguna del Carbón) a casi 7000 m s. n. m. y
+              la extensión del litoral marítimo que alcanza 4725 km. Amplias
+              llanuras húmedas limitan con extensos desiertos y altas montañas,
+              mientras que la presencia de climas tropicales y subtropicales en
+              el norte, contrastan con las nevadas y fríos extremos en las zonas
+              cordilleranas y el sur.
+              <br /><br />
+              La población argentina es un crisol de culturas y etnias,
+              resultado de la confluencia de diversos grupos a lo largo de la
+              historia. Los pueblos originarios, fueron los primeros habitantes
+              del territorio.[30] Con la llegada de los españoles[31] en el
+              siglo XVI, se produjo un mestizaje que dio forma a la base de la
+              identidad argentina. Sin embargo, fue durante el siglo XX cuando
+              la Argentina experimentó una gran oleada de inmigración,[32] a
+              consecuencia de ser un país próspero. Llegaron españoles e
+              italianos, también inmigrantes europeos como alemanes, franceses y
+              eslavos. Se estima que entre 1857 y 1947 llegaron 2 967 759
+              inmigrantes italianos.[33] Esta diversidad se refleja en la rica
+              cultura argentina, que combina tradiciones indígenas, españolas y
+              europeas, y se manifiesta en su música, arte, literatura y
+              gastronomía. La influencia de estas corrientes migratorias ha dado
+              lugar a una sociedad cosmopolita y multicultural, donde la
+              identidad argentina se define por su complejidad y diversidad.
+            </p>
+          </div>
+        </section>
 
+        <section class="seccion">
+          <h2 id="organizacion">Organización territorial</h2>
+          <div class="contenido-seccion">
+          <h3>Provincias</h3>
+          <p>
+            El territorio de la República Argentina está dividido en 24
+            jurisdicciones: 23 provincias y un distrito federal (Ciudad Autónoma
+            de Buenos Aires).[194] Se denomina provincia a cada uno de los
+            veintitrés estados federados reconocidos por la Constitución de la
+            Nación Argentina, que junto con la Ciudad Autónoma de Buenos Aires
+            constituyen las jurisdicciones de primer orden del país.[
+            <br /><br />
+            Las provincias poseen plena autonomía política, administrativa e
+            institucional, de acuerdo con lo establecido en los artículos 121 a
+            129 de la Constitución Nacional. Son entidades preexistentes a la
+            organización nacional, y delegaron parte de sus atribuciones
+            soberanas para constituir la federación argentina en 1853.[
+            <br /><br />
+            El país mantiene, por mandato constitucional, los nombres históricos
+            de Provincias Unidas del Río de la Plata y Confederación Argentina,
+            además de la denominación de uso corriente República Argentina.[
+          </p>
+          <h3>Ciudad Autónoma de Buenos Aires</h3>
+          <p>
+            Buenos Aires es la capital y ciudad más poblada de la República
+            Argentina. Sus nombres oficiales son Ciudad de Buenos Aires o Ciudad
+            Autónoma de Buenos Aires (CABA).[198] También es llamada Capital
+            Federal, sede del Gobierno nacional.[199] Es uno de los 24
+            distritos, o «jurisdicciones de primer orden»,[200] que conforman el
+            país. Desde 1996 es una ciudad autónoma, por lo que tiene sus
+            propios poderes ejecutivo, legislativo y judicial. Está situada en
+            la región centro-este del país, sobre la orilla sur del Río de la
+            Plata, en la región pampeana. En 1880, la ciudad de Buenos Aires fue
+            cedida por la provincia de Buenos Aires para que fuera la capital
+            federal del país; aunque en 2020 se declararon 24 «capitales
+            alternas» (una en cada provincia con la sola excepción de la
+            provincia de Buenos Aires donde se declararon dos) en ciudades
+            propuestas por las 23 provincias de la República (ley 27.589).[201]
+            En virtud de la reforma constitucional de 1994, goza de un régimen
+            de autonomía.
+            <br /><br />
+            Su tejido urbano se asemeja a un abanico que limita al sur, oeste y
+            norte con la lindante provincia de Buenos Aires y al este con el Río
+            de la Plata. Oficialmente la ciudad se encuentra dividida en 15
+            comunas que agrupan a 48 barrios.[
+            <br /><br />
+            La población de la ciudad, según el Censo de 2022, es de 3 120 612
+            habitantes.[203] Integra un aglomerado urbano mayor denominado área
+            metropolitana de Buenos Aires (AMBA) junto a cuarenta
+            partidos-municipios de la lindera provincia de Buenos Aires, que en
+            total suma una población de 13 395 796 habitantes.
+            <br /><br />
+            Buenos Aires es una ciudad cosmopolita y un importante destino
+            turístico.[204][205] Su compleja infraestructura la convierte en una
+            de las metrópolis de mayor importancia de América y es una ciudad
+            global de categoría «alfa -»,[206] dadas sus influencias en el
+            comercio, finanzas, moda, arte, gastronomía, educación,
+            entretenimiento y principalmente en su marcada cultura.[207] Su
+            renta per cápita es de las más altas de la región.[208][209] En
+            2022, fue la ciudad más visitada de Latinoamérica.[210][211] Es
+            considerada una de las veinticinco ciudades más influyentes del
+            mundo.
+            <br /><br />
+            Su perfil urbano es marcadamente ecléctico en el casco histórico. Se
+            mezclan los estilos virreinal español, art decó, art nouveau,
+            neogótico, italianizante, francés borbónico y academicismo francés.
+            Por esto último, sumado a su desarrollo edilicio y marcada
+            influencia europea en su arquitectura en determinadas zonas, es que
+            se la conoce en el mundo por el apodo de «La París de América».
+          </p>
+          <h3>Regiones para el desarrollo económico y social</h3>
+          <p>
+            Las regiones para el desarrollo económico y social o simplemente
+            regiones, son entidades de coordinación formalmente constituidas en
+            Argentina por tratados interprovinciales,[214] que agrupan a un
+            número de provincias que acceden voluntariamente. Entre sus
+            principales objetivos está la mejora en la ejecución de políticas
+            públicas, de la administración de los recursos económicos, y el
+            favorecimiento del desarrollo económico y social de las provincias
+            que las integran. La conformación de una región puede responder a
+            aspectos históricos, geográficos, económicos, sociales, culturales y
+            políticos, no existiendo ningún criterio establecido para su
+            conformación.
+          </p>
+          <img src="img/mapa_agrnentina.png" alt="Mapa Argentina" />
+          </div>
+        </section>
+
+        <section class="seccion">
           <h2 id="gobierno">Gobierno y política</h2>
+          <div class="contenido-seccion">
           <p>
             El Gobierno de Argentina es una democracia representativa,
             republicana y federal, regulada por la Constitución vigente. La
@@ -405,10 +418,12 @@
             infracciones graves, por un Jurado de Enjuiciamiento, integrado por
             legisladores, magistrados y abogados y senadores.
           </p>
-        </div>
+          </div>
+        </section>
 
-        <div>
+        <section class="seccion">
           <h2 id="flora">Flora y fauna</h2>
+          <div class="contenido-seccion">
           <h3>Flora</h3>
           <p>
             La flora de Argentina es muy diversa y comprende árboles, arbustos,
@@ -574,10 +589,12 @@
             ofidios que habitan en la Argentina incluyen a la boa constrictora,
             la venenosa yarará y la serpiente de cascabel.[
           </p>
-        </div>
+          </div>
+        </section>
 
-        <div>
+        <section class="seccion">
           <h2 id="cultura">Cultura</h2>
+          <div class="contenido-seccion">
           <h3>Gastronomía</h3>
           <p>
             La gastronomía de Argentina combina influjos provenientes de muy
@@ -667,7 +684,7 @@
             urbanas y la de zonas rurales, más tradicionales. Otro conjunto de
             diferenciaciones está dado por los estratos socioeconómicos. Aunque
             existen comidas argentinas comunes en toda la extensión del país
-            (asados y el chimichurri, los churrascos y milanesas, el dulce de
+            asados y el chimichurri, los churrascos y milanesas, el dulce de
             leche, los alfajores, las empanadas de carne, el locro, el puchero,
             el guiso carrero con fideos,[692] el guiso de arroz y el mate
             —especialmente el amargo—, se pueden distinguir cuatro regiones
@@ -907,7 +924,27 @@
             de Ricardo Piglia, César Aira, Sara Gallardo y Hebe Uhart, entre
             muchos otros.
           </p>
-        </div>
+          </div>
+        </section>
+
+        <section class="seccion">
+          <h2>Discusión</h2>
+          <div class="contenido-seccion">
+            <form id="formulario">
+
+            <label for="mensaje">Escribe tu nombre:</label>
+            <input type="text"  id="nombre" placeholder="Nombre"/>
+
+            <label for="mensaje">Escribe tu comentario:</label>
+            <textarea id="comentario" name="mensaje"></textarea>
+            <p id="contador-caracteres">0 / 200</p>
+          
+          <button type="submit" id="envio-comentario">Enviar</button>
+          <p id="avisos"></p>
+          <ul id="lista-comentarios"></ul>
+          </form>
+          </div>
+        </section>
       </main>
 
       <footer class="referencias">
