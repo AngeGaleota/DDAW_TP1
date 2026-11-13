@@ -24,7 +24,7 @@
     <button id="Modo">Modo Oscuro</button>
     <div class="botones-letra">
         <button class="pequena">A</button>
-        <button class="estandar">A</button>
+        <button class="estandar apretado">A</button>
         <button class="grande">A</button>
     </div>
 </div>
@@ -210,11 +210,11 @@
     </section>
 
     <section class="seccion">
-          <h2>Discusión</h2>
+          <h2 id="discusion">Discusión</h2>
           <div class="contenido-seccion">
             <form id="formulario">
 
-            <label for="mensaje">Escribe tu nombre:</label>
+            <label for="nombre">Escribe tu nombre:</label>
             <input type="text"  id="nombre" placeholder="Nombre"/>
 
             <label for="mensaje">Escribe tu comentario:</label>
@@ -223,8 +223,14 @@
           
           <button type="submit" id="envio-comentario">Enviar</button>
           <p id="avisos"></p>
-          <ul id="lista-comentarios"></ul>
           </form>
+          <div class="seccion-comentarios">
+            <h3>Comentarios publicados</h3>
+
+            <div id="lista-comentarios">
+                <p id="sin-comentarios">Todavía no hay comentarios publicados.</p>
+            </div>
+        </div>
           </div>
         </section>
         </main>

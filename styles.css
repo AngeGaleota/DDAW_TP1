@@ -211,10 +211,12 @@ border-color: #6A5A51;
     margin: 5px 0;
 }
 
-
-.error {
-  color: #A23B2C;
-  border-color: #A23B2C;
+/*modo claro*/
+#nombre.error,
+#comentario.error,
+#contador-caracteres.error {
+    color: #A23B2C;
+    border-color: #A23B2C;
 }
 
 #formulario {
@@ -254,7 +256,12 @@ border-color: #6A5A51;
     font-size: inherit;
 }
 
+#nombre {
+    width: 300px;
+}
+
 #comentario {
+    width: 70%;
     min-height: 100px;
     resize: vertical;
 }
@@ -280,18 +287,75 @@ border-color: #6A5A51;
 
     cursor: pointer;
 }
+.seccion-comentarios {
+    width: 100%;
+    max-width: 640px;
+    margin-top: 30px;
+}
+
+.seccion-comentarios h3 {
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #b8aaa2;
+}
 
 #lista-comentarios {
-    margin-top: 10px;
-    padding-left: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
 }
 
-#lista-comentarios li {
-    margin-bottom: 8px;
+#sin-comentarios {
+    color: #6e625c;
+    font-size: 14px;
 }
+.tarjeta-comentario {
+    padding: 10px;
+    width: 70%;
+
+    background-color: #f3efec;
+    border: 1px solid #b8aaa2;
+    border-radius: 10px;
+
+
+}
+
+.tarjeta-comentario h4 {
+    margin: 0 0 8px;
+    color: #463c37;
+    font-size: 16px;
+}
+
+.tarjeta-comentario p {
+    margin: 0 0 12px;
+    color: #393939;
+    line-height: 1.5;
+    white-space: pre-wrap;
+}
+.boton-borrar {
+    padding: 6px 12px;
+
+    background-color: rgba(99, 75, 65, 0.727);
+    color: white;
+
+    border: 1px solid #493830;
+    border-radius: 6px;
+
+    font-size: 14px;
+    cursor: pointer;
+}
+
 
 
 /*formulario oscuro*/
+.contenedor.oscuro #nombre.error,
+.contenedor.oscuro #comentario.error,
+.contenedor.oscuro #contador-caracteres.error {
+    color: #FF7777;
+    border-color: #FF7777;
+}
+
 .contenedor.oscuro #formulario {
     background-color: #2B2522;
     border-color: #6A5A51;
@@ -321,4 +385,30 @@ border-color: #6A5A51;
 .contenedor.oscuro .error {
     color: #ff8f7f;
     border-color: #ff8f7f;
+}
+.contenedor.oscuro .seccion-comentarios h3 {
+    border-bottom-color: #6A5A51;
+}
+
+.contenedor.oscuro #sin-comentarios {
+    color: #BEB3AC;
+}
+
+.contenedor.oscuro .tarjeta-comentario {
+    background-color: #2B2522;
+    border-color: #6A5A51;
+}
+
+.contenedor.oscuro .tarjeta-comentario h4 {
+    color: #E8E1DC;
+}
+
+.contenedor.oscuro .tarjeta-comentario p {
+    color: #BEB3AC;
+}
+
+.contenedor.oscuro .boton-borrar {
+    background-color: #806359;
+    color: white;
+    border-color: #9b796b;
 }

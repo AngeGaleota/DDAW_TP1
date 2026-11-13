@@ -1,14 +1,14 @@
 //Indice automatico
-const h2 = document.querySelectorAll('h2'); 
+const subtitulos = document.querySelectorAll('h2'); 
 const lista = document.querySelector('#lista');
 
-h2.forEach(function(subtitulos){
+subtitulos.forEach(function(subtitulos){
     const li = document.createElement('li');
-    const a = document.createElement('a');
+    const enlace = document.createElement('a');
     lista.append(li)
-    a.href=`#${subtitulos.id}`
-    a.textContent=subtitulos.textContent
-    li.append(a)
+    enlace.href=`#${subtitulos.id}`
+    enlace.textContent=subtitulos.textContent
+    li.append(enlace)
 })
 
 //Apariencia
@@ -74,9 +74,10 @@ secciones.forEach(function(seccion){
 //discusion
 const contadorCar = document.querySelector("#contador-caracteres")
 const comentario = document.querySelector("#comentario")
+const nombre = document.querySelector('#nombre')
 comentario.addEventListener('input', function(){
     contadorCar.textContent= `${comentario.value.length}/200`
-    if(comentario.value.length>200){
+    if(comentario.value.length<10|| comentario.value.length>200){
         comentario.classList.add('error')
         contadorCar.classList.add('error')
     }
@@ -85,34 +86,67 @@ comentario.addEventListener('input', function(){
         contadorCar.classList.remove('error')
     }
 })
+nombre.addEventListener('input', function() {
+    if (nombre.value.trim() !== '') {
+        nombre.classList.remove('error')
+    }
+})
 
 
 
 const formulario = document.querySelector('#formulario')
-const nombre = document.querySelector('#nombre')
 const aviso = document.querySelector('#avisos')
-const listaComentarios = document.querySelector('#lista-comentarios');
+const listaComentarios = document.querySelector('#lista-comentarios')
+const sinComentarios = document.querySelector("#sin-comentarios")
 
 formulario.addEventListener('submit', function (e){
 e.preventDefault()
+nombre.classList.remove('error')
+comentario.classList.remove('error')
 
 if(nombre.value.trim()===''){
     aviso.textContent = 'Falta el nombre.'
-    aviso.classList.add('error')
+    nombre.classList.add('error')
     return
 }
-if(comentario.value.trim()===''){
-    aviso.textContent = 'No hay un comentario que enviar.'
-    aviso.classList.add('error')
+if(comentario.value.trim().length < 10 || comentario.value.trim().length > 200){
+    aviso.textContent = 'El comentario debe tener entre 10 y 200 caracteres.'
+    comentario.classList.add('error')
+    contadorCar.classList.add('error')
     return
 }
 
+const tarjeta = document.createElement('div')
+tarjeta.classList.add('tarjeta-comentario')
+
+const autor = document.createElement('h4')
+autor.textContent = nombre.value.trim()
+
+const texto = document.createElement('p')
+texto.textContent = comentario.value.trim()
+
+const botonBorrar = document.createElement('button')
+botonBorrar.textContent = 'Borrar'
+botonBorrar.classList.add('boton-borrar')
+botonBorrar.type = 'button'
+
+botonBorrar.addEventListener('click', function() {
+    tarjeta.remove()
+
+    if (listaComentarios.querySelectorAll('.tarjeta-comentario').length === 0) {
+    sinComentarios.style.display = 'block'
+}
+})
+tarjeta.append(autor, texto, botonBorrar)
+
+listaComentarios.append(tarjeta)
+
+sinComentarios.style.display = 'none'
 aviso.textContent = 'Formulario enviado'
 
-const li = document.createElement('li');
-li.textContent= `${nombre.value}: "${comentario.value}"`
-listaComentarios.append(li)
 formulario.reset()
-
+contadorCar.textContent = '0/200'
+comentario.classList.remove('error')
+contadorCar.classList.remove('error')
 })
 
